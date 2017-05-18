@@ -1,4 +1,4 @@
-# tiny-answer
+# tiny-answer [![Travis](https://img.shields.io/travis/behance/tiny-answer.svg)](http://travis-ci.org/behance/tiny-answer) [![npm](https://img.shields.io/npm/v/tiny-answer.svg)](https://www.npmjs.com/package/tiny-answer)
 
 Answer to the Ultimate Question of Life, the Universe, and Everything.
 
