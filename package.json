@@ -1,0 +1,34 @@
+{
+  "name": "tiny-answer",
+  "version": "1.0.0",
+  "description": "Answer to the Ultimate Question of Life, the Universe, and Everything.",
+  "main": "src",
+  "scripts": {
+    "test": "npm run lint && npm run test:once",
+    "lint": "eslint src/**/*.js test/**/*.js",
+    "test:once": "env JASMINE_CONFIG_PATH=test/jasmine.json jasmine",
+    "test:inspect": "env JASMINE_CONFIG_PATH=test/jasmine.json node --inspect --debug-brk ./node_modules/.bin/jasmine",
+    "test:watch": "env JASMINE_CONFIG_PATH=test/jasmine.json nodemon --exec jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/behance/tiny-answer.git"
+  },
+  "keywords": [
+    "answer"
+  ],
+  "author": "Yuriy Nemtsov <nemtsov@gmail.com> (http://yuriynemtsov.com/)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/behance/tiny-answer/issues"
+  },
+  "homepage": "https://github.com/behance/tiny-answer",
+  "devDependencies": {
+    "eslint": "^3.16.1",
+    "eslint-plugin-behance": "^1.1.0",
+    "eslint-preset-behance": "^6.0.0",
+    "jasmine": "^2.5.3",
+    "jasmine-node": "^1.14.5",
+    "jasmine-promises": "nemtsov/jasmine-promises#working_in_node"
+  }
+}
